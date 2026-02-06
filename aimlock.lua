@@ -16,7 +16,7 @@ local Button = Instance.new("TextButton")
 
 ScreenGui.Name = "AimlockGui"
 ScreenGui.ResetOnSpawn = false
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui") -- <- zmiana
 
 Button.Size = UDim2.new(0, 150, 0, 50)
 Button.Position = UDim2.new(0, 20, 0.5, -25)
